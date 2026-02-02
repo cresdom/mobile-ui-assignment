@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -7,7 +7,7 @@ export default function Index() {
       {/* STATUS BAR (time + icons) */}
       <View style={styles.statusBar}>
         <Text style={styles.statusText}>5:26</Text>
-        <Text style={styles.statusText}>📶 Wi-Fi 🔋</Text>
+        <Text style={styles.statusText}>ᯤ Wi-Fi 🔋</Text>
       </View>
 
       {/* HEADER (back + title + menu) */}
@@ -15,12 +15,31 @@ export default function Index() {
         <Text style={styles.headerIcon}>‹</Text>
 
         <View style={styles.headerCenter}>
-          <Text style={styles.smallHeaderName}>XO_SQUARED</Text>
+          <Text style={styles.smallHeaderName}>mobileui</Text>
           <Text style={styles.headerText}>Posts</Text>
         </View>
 
         <Text style={styles.headerIcon}>⋯</Text>
       </View>
+
+      {/* USER INFO */}
+      <View style={styles.userRow}>
+        <Image
+          style={styles.avatar}
+          source={{ uri: "https://picsum.photos/id/82/1500/997" }}
+        />
+        <View style={{ flex: 1 }}>
+          <Text style={styles.username}>mobileui</Text>
+          <Text style={styles.subtext}>via cresciayuhhh</Text>
+        </View>
+        <Text style={styles.userMenu}>⋯</Text>
+      </View>
+
+      {/* MAIN IMAGE */}
+      <Image
+        style={styles.postImage}
+        source={{ uri: "https://picsum.photos/400/400" }}
+      />
     </SafeAreaView>
   );
 }
@@ -74,5 +93,32 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
     color: "#111",
+  },
+
+  /* USER ROW */
+  userRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 10,
+  },
+  avatar: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    marginRight: 10,
+  },
+  username: {
+    fontWeight: "bold",
+    color: "#111",
+  },
+  subtext: {
+    color: "gray",
+    fontSize: 12,
+    marginTop: 2,
+  },
+  userMenu: {
+    fontSize: 18,
+    color: "#111",
+    paddingHorizontal: 8,
   },
 });
