@@ -7,7 +7,7 @@ export default function Index() {
       {/* STATUS BAR (time + icons) */}
       <View style={styles.statusBar}>
         <Text style={styles.statusText}>5:26</Text>
-        <Text style={styles.statusText}>ᯤ Wi-Fi 🔋</Text>
+        <Text style={styles.statusText}>📶 Wi-Fi 🔋</Text>
       </View>
 
       {/* HEADER (back + title + menu) */}
@@ -15,7 +15,7 @@ export default function Index() {
         <Text style={styles.headerIcon}>‹</Text>
 
         <View style={styles.headerCenter}>
-          <Text style={styles.smallHeaderName}>mobileui</Text>
+          <Text style={styles.smallHeaderName}>MOBILEUI</Text>
           <Text style={styles.headerText}>Posts</Text>
         </View>
 
@@ -120,5 +120,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "#111",
     paddingHorizontal: 8,
+  },
+
+  /* IMAGE */
+  postImage: {
+    width: "100%",
+    height: 300,
+    backgroundColor: "#ccc",
   },
 });
