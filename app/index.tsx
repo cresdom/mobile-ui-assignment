@@ -30,7 +30,7 @@ export default function Index() {
         />
         <View style={{ flex: 1 }}>
           <Text style={styles.username}>mobileui</Text>
-          <Text style={styles.subtext}>via cresciayuhhh</Text>
+          <Text style={styles.subtext}>via typicallyuhhh</Text>
         </View>
         <Text style={styles.userMenu}>⋯</Text>
       </View>
@@ -73,6 +73,15 @@ export default function Index() {
         </Text>
 
         <Text style={styles.subtext}>1 day ago</Text>
+      </View>
+
+      {/* BOTTOM NAV (icons) */}
+      <View style={styles.bottomNav}>
+        <Text style={styles.navIcon}>⌂</Text>
+        <Text style={styles.navIcon}>⌕</Text>
+        <Text style={styles.navIcon}>▢</Text>
+        <Text style={styles.navIcon}>♡</Text>
+        <View style={styles.profileDot} />
       </View>
     </SafeAreaView>
   );
@@ -145,6 +154,9 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#111",
   },
+  bold: {
+    fontWeight: "bold",
+  },
   subtext: {
     color: "gray",
     fontSize: 12,
@@ -178,5 +190,31 @@ const styles = StyleSheet.create({
   actionIcon: {
     fontSize: 18,
     color: "#111",
+  },
+
+  /* BOTTOM NAV */
+  bottomNav: {
+    height: 52,
+    borderTopWidth: 1,
+    borderTopColor: "#ddd",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
+  },
+  navIcon: {
+    fontSize: 18,
+    color: "#111",
+  },
+  profileDot: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    backgroundColor: "#111",
+  },
+
+  /* TEXT AREA */
+  textArea: {
+    paddingHorizontal: 16,
+    paddingTop: 8,
   },
 });
