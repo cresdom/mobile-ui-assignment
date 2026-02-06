@@ -40,6 +40,16 @@ export default function Index() {
         style={styles.postImage}
         source={{ uri: "https://picsum.photos/400/400" }}
       />
+
+      {/* ACTIONS (left icons + bookmark on right) */}
+      <View style={styles.actionsRow}>
+        <View style={styles.actionsLeft}>
+          <Text style={styles.actionIcon}>♡</Text>
+          <Text style={styles.actionIcon}>💬</Text>
+          <Text style={styles.actionIcon}>↗</Text>
+        </View>
+        <Text style={styles.actionIcon}>📌</Text>
+      </View>
     </SafeAreaView>
   );
 }
@@ -127,5 +137,22 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 300,
     backgroundColor: "#ccc",
+  },
+
+  /* ACTIONS */
+  actionsRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+  },
+  actionsLeft: {
+    flexDirection: "row",
+    gap: 15,
+  },
+  actionIcon: {
+    fontSize: 18,
+    color: "#111",
   },
 });
