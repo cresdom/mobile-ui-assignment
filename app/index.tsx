@@ -40,6 +40,30 @@ export default function Index() {
         style={styles.postImage}
         source={{ uri: "https://picsum.photos/400/400" }}
       />
+
+      {/* TEXT AREA */}
+      <View style={styles.textArea}>
+        <Text style={styles.likes}>Liked by ellybels and 7 others</Text>
+
+        <Text>
+          <Text style={styles.bold}>nickystankyy </Text>
+          that's the cutest thing ive ever seen :3
+        </Text>
+
+        <Text style={styles.subtext}>View all 67 comments</Text>
+
+        <Text>
+          <Text style={styles.bold}>lil_drazeybooly </Text>
+          cutie patootie!
+        </Text>
+
+        <Text>
+          <Text style={styles.bold}> sadlysha</Text>
+          awwwww!
+        </Text>
+
+        <Text style={styles.subtext}>1 day ago</Text>
+      </View>
     </SafeAreaView>
   );
 }
@@ -121,4 +145,12 @@ const styles = StyleSheet.create({
     color: "#111",
     paddingHorizontal: 8,
   },
+
+  /* TEXT AREA */
+
+  textArea: { padding: 10, gap: 6 },
+
+  likes: { fontWeight: "bold", color: "#111" },
+
+  bold: { fontWeight: "bold" },
 });
