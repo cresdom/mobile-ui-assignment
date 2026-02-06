@@ -50,6 +50,30 @@ export default function Index() {
         </View>
         <Text style={styles.actionIcon}>📌</Text>
       </View>
+
+      {/* TEXT AREA */}
+      <View style={styles.textArea}>
+        <Text style={styles.likes}>Liked by wellybels and 7 others</Text>
+
+        <Text>
+          <Text style={styles.bold}>nickystankyy </Text>
+          that's the cutest thing ive ever seen :3
+        </Text>
+
+        <Text style={styles.subtext}>View all 67 comments</Text>
+
+        <Text>
+          <Text style={styles.bold}>lil_drazeybooly </Text>
+          cutie patootie!
+        </Text>
+
+        <Text>
+          <Text style={styles.bold}> sadlysha </Text>
+          awwwww!
+        </Text>
+
+        <Text style={styles.subtext}>1 day ago</Text>
+      </View>
     </SafeAreaView>
   );
 }
