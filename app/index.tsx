@@ -38,7 +38,7 @@ export default function Index() {
       {/* MAIN IMAGE */}
       <Image
         style={styles.postImage}
-        source={{ uri: "https://picsum.photos/400/400" }}
+        source={require("./assets/myPhoto.jpg")}
       />
 
       {/* ACTIONS (left icons + bookmark on right) */}
