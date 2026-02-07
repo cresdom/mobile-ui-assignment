@@ -31,10 +31,7 @@ export default function Index() {
 
       {/* USER INFO */}
       <View style={styles.userRow}>
-        <Image
-          style={styles.avatar}
-          source={{ uri: "https://picsum.photos/id/82/1500/997" }}
-        />
+        <Image style={styles.avatar} source={require("./assets/bonita.jpg")} />
         <View style={{ flex: 1 }}>
           <Text style={styles.username}>mobileui</Text>
           <Text style={styles.subtext}>via cresciahelanie</Text>
@@ -63,11 +60,11 @@ export default function Index() {
         <View style={styles.likesRow}>
           <Image
             style={styles.likeAvatar}
-            source={{ uri: "https://picsum.photos/id/64/100/100" }}
+            source={require("./assets/random.jpg")}
           />
           <Image
             style={styles.likeAvatar}
-            source={{ uri: "https://picsum.photos/id/65/100/100" }}
+            source={require("./assets/pompom.jpg")}
           />
 
           <Text style={styles.likesText}>
