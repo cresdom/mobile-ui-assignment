@@ -1,4 +1,5 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Alert, Button, Image, StyleSheet, Text, View } from "react-native";
+
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -68,11 +69,19 @@ export default function Index() {
         </Text>
 
         <Text>
-          <Text style={styles.bold}> sadlysha </Text>
+          <Text style={styles.bold}>sadlysha </Text>
           awwwww!
         </Text>
 
         <Text style={styles.subtext}>1 day ago</Text>
+      </View>
+
+      {/* ALERT BUTTON */}
+      <View style={styles.alertButton}>
+        <Button
+          title="Alert"
+          onPress={() => Alert.alert("Alert Button pressed")}
+        />
       </View>
 
       {/* BOTTOM NAV (icons) */}
@@ -82,14 +91,6 @@ export default function Index() {
         <Text style={styles.navIcon}>▢</Text>
         <Text style={styles.navIcon}>♡</Text>
         <View style={styles.profileDot} />
-      </View>
-
-      {/* ALERT BUTTON */}
-      <View style={styles.alertButton}>
-        <Button
-          title="Alert"
-          onPress={() => Alert.alert("Alert Button pressed")}
-        />
       </View>
     </SafeAreaView>
   );
@@ -202,13 +203,19 @@ const styles = StyleSheet.create({
 
   /* BOTTOM NAV */
   bottomNav: {
+    position: "absolute", // 👈 THIS is the key
+    bottom: 0,
+    left: 0,
+    right: 0,
     height: 52,
     borderTopWidth: 1,
     borderTopColor: "#ddd",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-around",
+    backgroundColor: "#fff",
   },
+
   navIcon: {
     fontSize: 18,
     color: "#111",
