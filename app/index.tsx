@@ -238,6 +238,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-around",
     backgroundColor: "#fff",
+    paddingBottom: 20,
+    paddingTop: 10,
   },
 
   navIcon: {
@@ -254,7 +256,8 @@ const styles = StyleSheet.create({
   /* TEXT AREA */
   textArea: {
     paddingHorizontal: 16,
-    paddingTop: 8,
+    paddingTop: 10,
+    paddingBottom: 8,
   },
 
   likes: {
