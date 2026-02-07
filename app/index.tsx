@@ -103,11 +103,11 @@ export default function Index() {
 
       {/* BOTTOM NAV (icons) */}
       <View style={styles.bottomNav}>
-        <Text style={styles.navIcon}>⌂</Text>
-        <Text style={styles.navIcon}>⌕</Text>
-        <Text style={styles.navIcon}>▢</Text>
-        <Text style={styles.navIcon}>♡</Text>
-        <View style={styles.profileDot} />
+        <FontAwesome5 name="home" size={18} color="black" />
+        <FontAwesome5 name="search" size={18} color="black" />
+        <FontAwesome5 name="photo-video" size={18} color="black" />
+        <FontAwesome5 name="shopping-bag" size={18} color="black" />
+        <FontAwesome5 name="user-alt" size={18} color="black" />
       </View>
     </SafeAreaView>
   );
