@@ -53,17 +53,17 @@ export default function Index() {
 
       {/* TEXT AREA */}
       <View style={styles.textArea}>
-        <Text style={styles.likes}>Liked by wellybels and 7 others</Text>
+        <Text style={styles.likes}>Liked by wellybels and 456 others</Text>
 
         <Text>
-          <Text style={styles.bold}>nickystankyy </Text>
+          <Text style={styles.bold}>nickystarkyy </Text>
           that's the cutest thing ive ever seen :3
         </Text>
 
         <Text style={styles.subtext}>View all 67 comments</Text>
 
         <Text>
-          <Text style={styles.bold}>lil_drazeybooly </Text>
+          <Text style={styles.bold}>lil_drazeyboi </Text>
           cutie patootie!
         </Text>
 
@@ -82,6 +82,14 @@ export default function Index() {
         <Text style={styles.navIcon}>▢</Text>
         <Text style={styles.navIcon}>♡</Text>
         <View style={styles.profileDot} />
+      </View>
+
+      {/* ALERT BUTTON */}
+      <View style={styles.alertButton}>
+        <Button
+          title="Alert"
+          onPress={() => Alert.alert("Alert Button pressed")}
+        />
       </View>
     </SafeAreaView>
   );
@@ -216,5 +224,12 @@ const styles = StyleSheet.create({
   textArea: {
     paddingHorizontal: 16,
     paddingTop: 8,
+  },
+
+  /* ALERT BUTTON */
+  alertButton: {
+    paddingHorizontal: 20,
+    paddingBottom: 12,
+    paddingTop: 6,
   },
 });
