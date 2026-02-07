@@ -73,24 +73,28 @@ export default function Index() {
           </Text>
         </View>
 
-        <Text>
+        <Text style={styles.comment}>
           <Text style={styles.bold}>nickystarkyy </Text>
           thats the cutest thing ive ever seen :3
         </Text>
 
-        <Text style={styles.subtext}>View all 67 comments</Text>
+        <Text style={styles.comment}>
+          <Text style={styles.subtext}>View all 67 comments</Text>
+        </Text>
 
-        <Text>
+        <Text style={styles.comment}>
           <Text style={styles.bold}>lil_drazeyboi </Text>
           cutie patootie!
         </Text>
 
-        <Text>
+        <Text style={styles.comment}>
           <Text style={styles.bold}>sadlysha </Text>
           awwwww!
         </Text>
 
-        <Text style={styles.subtext}>1 day ago</Text>
+        <Text style={styles.comment}>
+          <Text style={styles.subtext}>1 day ago</Text>
+        </Text>
       </View>
 
       {/* ALERT BUTTON */}
@@ -258,6 +262,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 10,
     paddingBottom: 8,
+  },
+
+  comment: {
+    marginTop: 4,
   },
 
   likes: {
