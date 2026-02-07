@@ -1,5 +1,6 @@
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+import Ionicons from "@expo/vector-icons/Ionicons";
 import { Alert, Button, Image, StyleSheet, Text, View } from "react-native";
-
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -8,7 +9,12 @@ export default function Index() {
       {/* STATUS BAR (time + icons) */}
       <View style={styles.statusBar}>
         <Text style={styles.statusText}>5:26</Text>
-        <Text style={styles.statusText}>📶 Wi-Fi 🔋</Text>
+
+        <View style={styles.statusIcons}>
+          <FontAwesome5 name="signal" size={13} color="#111" />
+          <Ionicons name="wifi" size={16} color="#111" />
+          <FontAwesome5 name="battery-three-quarters" size={16} color="#111" />
+        </View>
       </View>
 
       {/* HEADER (back + title + menu) */}
@@ -45,11 +51,11 @@ export default function Index() {
       {/* ACTIONS (left icons + bookmark on right) */}
       <View style={styles.actionsRow}>
         <View style={styles.actionsLeft}>
-          <Text style={styles.actionIcon}>♡</Text>
-          <Text style={styles.actionIcon}>💬</Text>
-          <Text style={styles.actionIcon}>↗</Text>
+          <Ionicons name="heart-outline" size={22} color="#111" />
+          <Ionicons name="chatbubble-outline" size={21} color="#111" />
+          <Ionicons name="paper-plane-outline" size={21} color="#111" />
         </View>
-        <Text style={styles.actionIcon}>📌</Text>
+        <Ionicons name="bookmark-outline" size={22} color="#111" />
       </View>
 
       {/* TEXT AREA */}
@@ -160,6 +166,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
     color: "#111",
+  },
+
+  statusIcons: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
   },
 
   /* USER ROW */
