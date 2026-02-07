@@ -26,7 +26,7 @@ export default function Index() {
           <Text style={styles.headerText}>Posts</Text>
         </View>
 
-        <Text style={styles.headerIcon}>⋯</Text>
+        <View style={{ width: 30 }} />
       </View>
 
       {/* USER INFO */}
