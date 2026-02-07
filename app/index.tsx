@@ -107,11 +107,11 @@ export default function Index() {
 
       {/* BOTTOM NAV (icons) */}
       <View style={styles.bottomNav}>
-        <FontAwesome5 name="home" size={18} color="black" />
-        <FontAwesome5 name="search" size={18} color="black" />
-        <FontAwesome5 name="photo-video" size={18} color="black" />
-        <FontAwesome5 name="shopping-bag" size={18} color="black" />
-        <FontAwesome5 name="user-alt" size={18} color="black" />
+        <FontAwesome5 name="home" size={22} color="black" />
+        <FontAwesome5 name="search" size={22} color="black" />
+        <FontAwesome5 name="photo-video" size={22} color="black" />
+        <FontAwesome5 name="shopping-bag" size={22} color="black" />
+        <FontAwesome5 name="user-alt" size={22} color="black" />
       </View>
     </SafeAreaView>
   );
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#ffffff",
-    paddingBottom: 60,
+    paddingBottom: 64,
   },
 
   /* STATUS BAR */
@@ -235,15 +235,13 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    height: 52,
+    height: 64,
     borderTopWidth: 1,
     borderTopColor: "#ddd",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-around",
     backgroundColor: "#fff",
-    paddingBottom: 20,
-    paddingTop: 10,
   },
 
   navIcon: {
