@@ -31,7 +31,7 @@ export default function Index() {
         />
         <View style={{ flex: 1 }}>
           <Text style={styles.username}>mobileui</Text>
-          <Text style={styles.subtext}>via typicallyuhhh</Text>
+          <Text style={styles.subtext}>via cresciahelanie</Text>
         </View>
         <Text style={styles.userMenu}>⋯</Text>
       </View>
@@ -54,11 +54,25 @@ export default function Index() {
 
       {/* TEXT AREA */}
       <View style={styles.textArea}>
-        <Text style={styles.likes}>Liked by wellybels and 456 others</Text>
+        <View style={styles.likesRow}>
+          <Image
+            style={styles.likeAvatar}
+            source={{ uri: "https://picsum.photos/id/64/100/100" }}
+          />
+          <Image
+            style={styles.likeAvatar}
+            source={{ uri: "https://picsum.photos/id/65/100/100" }}
+          />
+
+          <Text style={styles.likesText}>
+            Liked by <Text style={styles.bold}>wellybels</Text> and{" "}
+            <Text style={styles.bold}>456 others</Text>
+          </Text>
+        </View>
 
         <Text>
           <Text style={styles.bold}>nickystarkyy </Text>
-          that's the cutest thing ive ever seen :3
+          thats the cutest thing ive ever seen :3
         </Text>
 
         <Text style={styles.subtext}>View all 67 comments</Text>
@@ -100,6 +114,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#ffffff",
+    paddingBottom: 60,
   },
 
   /* STATUS BAR */
@@ -203,7 +218,7 @@ const styles = StyleSheet.create({
 
   /* BOTTOM NAV */
   bottomNav: {
-    position: "absolute", // 👈 THIS is the key
+    position: "absolute",
     bottom: 0,
     left: 0,
     right: 0,
@@ -231,6 +246,33 @@ const styles = StyleSheet.create({
   textArea: {
     paddingHorizontal: 16,
     paddingTop: 8,
+  },
+
+  likes: {
+    color: "#111",
+    marginBottom: 6,
+  },
+
+  likesRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 6,
+  },
+
+  likeAvatar: {
+    width: 18,
+    height: 18,
+    borderRadius: 9,
+    marginRight: -4,
+    borderWidth: 1,
+    borderColor: "#fff",
+  },
+
+  likesText: {
+    fontSize: 13,
+    color: "#111",
+    marginLeft: 8,
+    lineHeight: 18,
   },
 
   /* ALERT BUTTON */
